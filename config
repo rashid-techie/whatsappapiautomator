@@ -1,0 +1,9 @@
+name                            : Whats2API
+author                          : João Vitor Miranda Santos
+version                         : 0.0.9
+
+//WhatsApp Configurations		
+instance						: 83430
+webhook							: https://omni.mconnectapps.com/api/v1.0/omni-whatsapp/index.php
+token							: j19ksi1mim1lksm12213
+masterKey						: w2apiisthebestlibrary
