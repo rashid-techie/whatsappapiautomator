@@ -50,6 +50,7 @@ var SANITIZE_ACK = function(instanceID,data){
         chatId: data.id.remote,
         status: (data.ack == 1 ? 'sent' : (data.ack == 2 ? 'delivered' : 'viewed'))
       }],
+	  data: data,
       instanceId: instanceID
   });
 };
@@ -68,6 +69,7 @@ var SANITIZE_MSG = function(instanceID,data) {
       self: 0,
       isForwarded: data.isForwarded,
       author: data.from,
+	  author_to: data.to,
       time: data.t,
       lat: data.lat,
       lng: data.lng,
