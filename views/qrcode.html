@@ -5,12 +5,7 @@
 		<div id="qrcode" class="qrCode" style="background-image: url('@{model.qrcode}');"></div>
 	</div>
 
-	<div class="item">
-		<video style="width: 100%;" controls onloadedmetadata="this.muted = true" playsinline autoplay muted loop>
-			<source src="/scan.mp4" type="video/mp4"></source>
-			Your browser does not support the video tag.
-		</video>
-	</div>
+	
 	<script type="text/javascript">
 		if('@{model.qrcode}' != ''){
 			$('#loading').hide();
